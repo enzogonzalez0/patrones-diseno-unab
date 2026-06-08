@@ -1,9 +1,9 @@
 Aunque los patrones son herramientas excelentes, la comunidad de software ha planteado varias críticas válidas sobre su uso abusivo o sistemático:
 
 1)Complejidad innecesaria: A veces se aplican patrones para prever una flexibilidad futura que nunca se va a necesitar, haciendo que el código sea innecesariamente enrevesado.
-Ejemplo: Implementar el patrón Abstract Factory para instanciar una única base de datos de un solo tipo, agregando interfaces y fábricas cuando un simple constructor alcanzaba.
+ejemplo: Implementar el patrón Abstract Factory para instanciar una única base de datos de un solo tipo, agregando interfaces y fábricas cuando un simple constructor alcanzaba.
 
-2)Soluciones a carencias del lenguaje: Algunos autores argumentan que muchos patrones solo existen porque ciertos lenguajes tradicionales carecen de abstracciones de alto nivel.
-Ejemplo: En lenguajes viejos necesitás toda una estructura de clases para el patrón Strategy, mientras que en Python podés pasar directamente una función como argumento a otra.
+2)soluciones a carencias del lenguaje: Algunos autores argumentan que muchos patrones solo existen porque ciertos lenguajes tradicionales carecen de abstracciones de alto nivel.
+ejemplo:En lenguajes viejos necesitás toda una estructura de clases para el patrón Strategy, mientras que en Python podés pasar directamente una función como argumento a otra.
 
-3) Falta de eficiencia: Al introducir múltiples capas de abstracción, interfaces y llamadas indirectas, puede haber un impacto en el rendimiento y consumo de memoria.
+3) falta de eficiencia: Al introducir múltiples capas de abstracción, interfaces y llamadas indirectas, puede haber un impacto en el rendimiento y consumo de memoria.

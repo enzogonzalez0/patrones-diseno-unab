@@ -1,0 +1,1 @@
+#1 singleton es un patron que garantiza que una clase tenga una unica instancia en todo el programa y proporciona un acceso global a ella
