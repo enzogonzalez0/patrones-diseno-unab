@@ -1,0 +1,7 @@
+los los antipatrones de diseño son soluciones que parecen correctas para un problema de software, pero que en realidad generan mas problemas a largo plazo, como codigo dificil de mantener, entender o modificar.
+
+Ejemplos:
+God Object: es cuando creas una sola clase gigante que hace  todo en el programa. rompe la regla de separar las responsabilidades y hace que el codigo sea imposible de mantener.
+Copy-Paste Programming: es copiar y pegar el mismo bloque de codigo en diez lugares distintos del programa en vez de crear una sola funcion reutilizable. si encontras un error, tenes que arreglarlo diez veces.
+Spaghetti Code: es un programa que no tiene estructura clara, donde todo esta mezclado y enredado. Si cambias algo en una punta, se rompe otra cosa en la otra punta.
+
