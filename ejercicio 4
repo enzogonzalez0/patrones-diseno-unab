@@ -1,0 +1,8 @@
+Singleton: Solitario
+Adapter: Wrapper
+Strategy: Policy
+Facade: Window
+Observer: Publish-Subscribe
+Proxy: Surrogate
+Factory Method: Virtual Constructor
+State: Objects for States
