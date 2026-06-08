@@ -1,0 +1,16 @@
+
+
+1)singleton
+problema vida cotidiana: tengo un programa sencillo para ir anotando las notas de mis parciales. Si el programa creara una libreta de notas nueva cada vez que guardo una materia, las notas quedarían repartidas por cualquier lado y perdería el promedio real.
+
+solucion: Programo la libreta de notas usando singleton, asi, el programa usa siempre una sola y única lista en la memoria, asegurando que todas las notas se guarden juntas en el mismo lugar.
+
+2)strategy
+problema vida cotidiana: Cuando salgo a la calle, me gusta escuchar música. Si tengo datos uso Spotify, si me quedo sin señal tengo que escuchar los temas que descargue en el celular, y si estoy en casa uso el Wi-Fi. El objetivo es el mismo, pero el método cambia según dónde esté.
+
+solucion: Programo un reproductor usando Strategy,creo tres opciones (reproducir online, reproducir descargados, reproducir con Wi-Fi) y el programa elige cual voy a usar según mi conexion en ese momento.
+
+3)adapter
+problema vida cotidiana: cree un programa en python para tener mi lista de compras del supermercado. el problema es que mi mama me mando la lista de lo que falta por un mensaje de texto comun, y mi programa no entiende texto suelto, necesita una lista de variables ordenada.
+
+solucion: programo un adapter. esta función agarra el texto largo del mensaje de mi mama, lo separa palabra por palabra y lo transforma en la lista ordenada que mi programa si lo puede leer.
