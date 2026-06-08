@@ -1,1 +1,48 @@
-#1 singleton es un patron que garantiza que una clase tenga una unica instancia en todo el programa y proporciona un acceso global a ella
+#1 singleton
+
+class ConexionBaseDatos:
+    def __init__(self):
+        self.base_datos = "MiBaseDeDatos_UNAB"
+
+ _instancia_unica = None
+
+def obtener_conexion():
+    global _instancia_unica
+    if _instancia_unica is None:
+        _instancia_unica = ConexionBaseDatos()
+    return _instancia_unica
+   
+
+#2 adapter
+
+class ControlPlayStation:
+    def apretar_boton_equis(self):
+        return "Botón 'X' presionado en el joystick de Play."
+
+class AdaptadorParaXbox:
+    def __init__(self, joystick_play):
+        self.joystick_play = joystick_play
+    def apretar_boton_a(self):
+        accion_real = self.joystick_play.apretar_boton_equis()
+        return f"Adaptador traduciendo: [{accion_real}] -> Convertido a Botón 'A' de Xbox."
+
+
+ #3 strategy 
+
+ class DescuentoNormal:
+    def calcular(self, total):
+        return total
+
+class DescuentoBlackFriday:
+    def calcular(self, total):
+        return total * 0.5
+
+class CarritoDeCompras:
+    def __init__(self, estrategia_descuento):
+        self.total = 1000
+        self.estrategia = estrategia_descuento
+
+    def pagar(self):
+        total_final = self.estrategia.calcular(self.total)
+        return f"El total a pagar es: ${total_final}"
+
